@@ -12,13 +12,14 @@ const addNote = function () {
          title:title,
          body:body
    })
-
-
-
-      console.log(nodes)
+      saveNotes(notes)
 }
+
+
 const saveNotes=function(notes){
-      
+      const dataJSON = JSON.stringify(notes)
+      fs.writeFileSync('notes.json',dataJSON)
+
 }
 
 const loadNotes = function () {
@@ -29,10 +30,10 @@ const loadNotes = function () {
       } catch (e){
             return[]
       }
-}
+} 
 
 
-
+      
 module.exports = {
       getNotes: getNotes,
       addNote: addNote
