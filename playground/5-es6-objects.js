@@ -8,7 +8,7 @@ const userAge = 23
 const user = {
     name,
     age: userAge,
-    location: 'india'
+    location: 'sri kalahasthi'
 
 }
 console.log(user)
@@ -27,6 +27,7 @@ const product = {
 
 // const label= product.label
 // const stock= product.stock
+
 // const {label:productLable,stock,rating=4.5} = product
 // console.log(productLable)
 // console.log(stock)
